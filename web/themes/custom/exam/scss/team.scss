@@ -1,0 +1,136 @@
+//team
+#block-views-block-our-team-block-1 {
+    margin-top: 136px;
+    @media (max-width:1199px) {
+        margin-top: 300px;   
+    }
+    h2 {
+        text-align: center;
+    }
+    h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background: #000;
+        z-index: -1;
+        position: relative;
+        vertical-align: middle;
+    }
+    h2:before {
+        right: 15px;
+        margin: 0 0 0 -100%;
+    }
+    h2:after {
+        left: 15px;
+        margin: 0 -100% 0 0;
+    }
+    .node__title {
+        display: none;
+    }
+    img {
+        object-fit: cover;
+        width: 290px;
+        height: 290px;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+    img:hover {
+        filter: grayscale(0);
+    }
+    .social-media-links--platforms.platforms.vertical {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        @media (max-width:1199px) {
+        margin-left: 90px;
+        @media (max-width:991px) {
+            margin-left: 0px;
+        }
+        @media (max-width:560px) {
+            margin-left: 22%;
+        }
+        @media (max-width:420px) {
+            margin-left: 15%;
+        }
+    }
+        li {
+            width: 30px;
+            height: 30px;
+            font-size: 12px;
+            padding: 2px 8px 8px 5px;
+            margin-top: 10px;
+            margin-right: 10px;
+            background-color: #6f9ccb;
+            a {
+                color: #fff;
+            }
+        }
+        li:hover {
+            transition: 0.5s;
+            background-color: #fff;
+            a {
+                color: #6f9ccb;
+            }
+        }
+    }
+    button.lam,
+    button.lam a {
+        background-color: #373645;
+        border: 5px solid #373645;
+    }
+    button {
+        background-color: #373645 !important;
+    }
+    //likes
+    .flag.flag-like.action-flag {
+        position: absolute;
+        top: 455px;
+        margin-left: 75%;
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/icons/heart-thin.svg");
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        a {
+            color: #fff;
+        }
+    }
+    .flag.flag-like.action-unflag {
+        position: absolute;
+        top: 455px;
+        margin-left: 75%;
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/icons/red-heart.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        a {
+            text-align: center;
+            color: red;
+            z-index: -12322;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    .views-row{
+         margin: 0 -10px;
+        @media (max-width:1199px) {
+            margin: 0 -20px;
+        }
+    }
+    .view-content.row{
+        @media (max-width:560px) {
+          display: flex;
+        justify-content: center !important;  
+        }
+        
+    }
+}

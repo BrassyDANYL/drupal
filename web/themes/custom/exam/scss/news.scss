@@ -1,0 +1,213 @@
+//news block
+#block-views-block-news-block-1 {
+    .node__title {
+        display: none;
+    }
+    h2 {
+        text-align: center;
+    }
+    h2:before,
+    h2:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background: #000;
+        z-index: -1;
+        position: relative;
+        vertical-align: middle;
+    }
+    h2:before {
+        right: 15px;
+        margin: 0 0 0 -100%;
+    }
+    h2:after {
+        left: 15px;
+        margin: 0 -100% 0 0;
+    }
+    .content {
+        .view-content.row {
+            background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.2), #fff 3px, #fff 10px, #fff 0px);
+            display: flex;
+            justify-content: space-around !important;
+            flex-direction: row;
+            margin-top: -30px !important;
+            height: 370px !important;
+            @media (max-width: 1199px) {
+                height: 670px !important;
+            }
+            @media (max-width:767px) {
+                height: 1010px!important;
+            }
+            .views-row {
+                position: relative;
+                background-color: #fff;
+                width: 580px !important;
+                height: 250px !important;
+                margin-top: 70px;
+                @media (max-width: 1399px) {
+                    width: 550px !important;
+                }
+                @media (max-width: 767px) {
+                    width: 450px !important;
+                    height: 370px !important;
+                    justify-content: flex-start;
+                }
+                @media (max-width:450px) {
+                    width: 300px !important;
+                }
+                .node__content.clearfix {
+                    //photos
+                    .field.field--name-field-img.field--type-image.field--label-above {
+                        .field__item {
+                            justify-content: flex-start !important;
+                            padding-left: 70px;
+                        }
+                        img {
+                            margin-left: 10px;
+                            border-left: 1px solid #585858;
+                            padding-left: 10px;
+                            width: 87px;
+                            height: 79px;
+                        }
+                    }
+                    //writer
+                    .clearfix.text-formatted.field.field--name-field-writer.field--type-text.field--label-above {
+                        .field__item {
+                            position: absolute;
+                            top: 20px;
+                            left: 190px;
+                            white-space: normal;
+                            @media (max-width:767px) {
+                                    top:-10px;
+                                    left: 20px;
+                                }
+                            .author {
+                                color: #cccccc;
+                                @media (max-width:450px) {
+                                font-size: 10px !important;
+                                }
+                            }
+                            .name {
+                                color: black;
+                            }
+                            .category {
+                                color: #82a9d2;
+                            }
+                        }
+                    }
+                    .clearfix.text-formatted.field.field--name-field-news.field--type-text.field--label-above {
+                        margin-top: 37px;
+                        margin-left: 70px;
+                        @media (max-width:450px) {
+                            margin-left: 5px;
+                            }
+                        .field__item {
+                            margin-left: 10px;
+                            margin-bottom: 30px;
+                            border-left: 1px solid #585858;
+                            padding-left: 10px;
+                            width: 440px;
+                            height: 100px;
+                            word-break: break-all;
+                            text-align: left;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            font-weight: 700;
+                            @media (max-width: 767px) {
+                                width: 285px;
+                                height: 150px;
+                            }
+                            @media (max-width:450px) {
+                                border-left: 0px;
+                                padding-left:0px;
+                                margin-left: -10px;
+                            }
+                        }
+                    }
+                    .clearfix.text-formatted.field.field--name-field-zagolovok.field--type-text.field--label-above {
+                        .field__item {
+                            position: absolute;
+                            top: 115px;
+                            left: 80px;
+                            @media (max-width: 767px) {
+                                top:125px;
+                                h3{
+                                font-size: 15px !important;
+                                }
+                            }
+                            @media (max-width:450px) {
+                                left:0px;
+                                h3{
+                                    font-size: 13px !important;
+                                }
+                            }
+                        }
+                    }
+                    .field.field--name-field-month.field--type-datetime.field--label-above {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        .field__item {
+                            text-transform: uppercase;
+                            color: #373645;
+                            font-size: 20px;
+                        }
+                    }
+                    .field.field--name-field-day.field--type-datetime.field--label-above {
+                        position: absolute;
+                        left: 25px;
+                        top: 40px;
+                        .field__item {
+                            color: #6e9bca;
+                            font-size: 30px;
+                            font-weight: 700;
+                        }
+                    }
+                    .field.field--name-field-year.field--type-datetime.field--label-above {
+                        position: absolute;
+                        top: 75px;
+                        left: 25px;
+                        .field__item {
+                            color: #585858;
+                        }
+                    }
+                    .clearfix.text-formatted.field.field--name-field-button.field--type-text.field--label-above {
+                        position: absolute;
+                        top: 224px;
+                        left: 450px;
+                        button {
+                            width: 110px;
+                        }
+                        @media (max-width: 1399px) {
+                            left: 420px;
+                        }
+                        @media (max-width: 767px) {
+                            top: 312px;
+                            left: 311px !important;
+                        }
+                        @media (max-width: 450px) {
+                            left:150px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//search
+.views-exposed-form {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 252px;
+    .form-row {
+        display: flex;
+    }
+}
+.view-filters {
+    position: relative;
+    top: 35px;
+}
+.js-form-item.js-form-type-textfield.form-type-textfield.js-form-item-keys.form-item-keys.mb-3 {
+    padding-right: 0px !important;
+}
